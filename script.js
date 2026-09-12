@@ -1,12 +1,4 @@
-/* ============================================================
-   THE CRAFT SOCIAL — script.js
-   Basic beginner JavaScript. No libraries. Just plain DOM code.
-   ============================================================ */
-
-
-/* ---------- 1. STICKY NAVIGATION ON SCROLL ---------- */
-/* When the user scrolls down more than 50 pixels, add a class
-   called "sticky" to the header so it gets a background. */
+// Sticky Navigation on scroll
 
 window.addEventListener('scroll', function () {
     var header = document.querySelector('header');
@@ -18,10 +10,7 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
-/* ---------- 2. COURSES PAGE: CHANGE THE MODE BADGE ---------- */
-/* When the user clicks "Online" or "Offline", change the text
-   inside every element with the class "mode-badge". */
+// online/offline mode badge
 
 function setMode(mode) {
     var badges = document.querySelectorAll('.mode-badge');
@@ -35,10 +24,7 @@ function setMode(mode) {
     }
 }
 
-
-/* ---------- 3. COURSES PAGE: SEARCH THE SCHEDULE TABLE ---------- */
-/* As the user types in the search box, hide any table rows
-   that do not match what they typed. */
+// schedule table
 
 var searchBox = document.getElementById('scheduleSearch');
 
@@ -61,16 +47,13 @@ if (searchBox) {
 }
 
 
-/* ---------- 4. FEES PAGE: CALCULATE THE PRICE ---------- */
-/* Read the selected course and the selected mode, work out
-   the price, and show it on the page. */
+// calculate price
 
 function calculateFees() {
 
     var courseSelect = document.getElementById('skillSelect');
     var priceText = document.getElementById('calculatedPrice');
 
-    /* If we are not on the fees page, stop here. */
     if (!courseSelect || !priceText) {
         return;
     }
@@ -78,7 +61,6 @@ function calculateFees() {
     var course = courseSelect.value;
     var mode = '';
 
-    /* Find which radio button is checked. */
     var radios = document.getElementsByName('courseMode');
 
     for (var i = 0; i < radios.length; i++) {
@@ -87,13 +69,11 @@ function calculateFees() {
         }
     }
 
-    /* If nothing chosen yet, show zero. */
     if (course === '' || mode === '') {
         priceText.innerText = 'PKR 0';
         return;
     }
 
-    /* Set the base price for each course. */
     var price = 0;
 
     if (course === 'henna') {
@@ -104,16 +84,14 @@ function calculateFees() {
         price = 6000;
     }
 
-    /* Online mode is 500 rupees cheaper. */
     if (mode === 'online') {
         price = price - 500;
     }
 
-    /* Show the final price on the page. */
     priceText.innerText = 'PKR ' + price.toLocaleString();
 }
 
-/* Run calculateFees whenever the dropdown or a radio changes. */
+// run calculatefess
 var courseDropdown = document.getElementById('skillSelect');
 
 if (courseDropdown) {
@@ -126,10 +104,7 @@ if (courseDropdown) {
     }
 }
 
-
-/* ---------- 5. ENROLL PAGE: SHOW THANK YOU MESSAGE ---------- */
-/* When the enrollment form is submitted, hide the form and
-   show the thank-you message instead. */
+// thank you msg
 
 var enrollForm = document.getElementById('enrollForm');
 
@@ -146,8 +121,7 @@ if (enrollForm) {
 }
 
 
-/* ---------- 6. HOME SERVICES PAGE: SHOW THANK YOU MESSAGE ---------- */
-/* Same idea as the enroll form, but for the home visit booking. */
+// same as before but for home visit booking
 
 var serviceForm = document.getElementById('serviceForm');
 
