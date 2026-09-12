@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses — The Craft Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">The Craft Social</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="home-services.html">Home Services</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                </ul>
+                <a href="enroll.html" class="btn-cta">Join a class</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-opener">
+            <h1>Courses</h1>
+            <p>Three crafts, taught in small groups. Every course runs on a rolling schedule, new batches start every two weeks.</p>
+        </section>
+
+        <section class="mode-strip">
+            <span class="mode-label">Show me this mode:</span>
+            <div class="mode-buttons">
+                <button type="button" onclick="setMode('online')" class="mode-btn">Online</button>
+                <button type="button" onclick="setMode('offline')" class="mode-btn">Offline</button>
+            </div>
+        </section>
+
+        <section class="course-list">
+
+            <article class="course">
+                <div class="course-image">
+                    <img src="images/henna-hand.jpg" alt="A completed henna design on a forearm">
+                </div>
+                <div class="course-body">
+                    <h2>Intricate Henna Design</h2>
+                    <p>Traditional bridal patterns and the minimalist line-work that's more in demand now. You'll learn cone control, how to build a design from the wrist outward, and how to look after the stain so it lasts.</p>
+                    <p class="course-meta">
+                        <span>Four weeks</span>
+                        <span>Twice a week</span>
+                        <span class="mode-badge">In-person studio practice</span>
+                    </p>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course-image">
+                    <img src="images/sewing-tools.jpg" alt="Sewing scissors, measuring tape and thread on fabric">
+                </div>
+                <div class="course-body">
+                    <h2>Contemporary Stitching</h2>
+                    <p>Start with seams and a straight stitch, work up to a finished garment. Machine and hand work, how to read a pattern, and the finishing details — hems, closures, pressing — that separate a home job from a wearable piece.</p>
+                    <p class="course-meta">
+                        <span>Six weeks</span>
+                        <span>Twice a week</span>
+                        <span class="mode-badge">In-person studio practice</span>
+                    </p>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course-image">
+                    <img src="images/makeup-brush.jpg" alt="A makeup brush applying colour to a model's eye">
+                </div>
+                <div class="course-body">
+                    <h2>Editorial Makeup</h2>
+                    <p>Colour theory, contouring, and how to work for a camera rather than a mirror. Aimed at people who want to build a portfolio or work on shoots. Ends with a portrait session so you leave with images.</p>
+                    <p class="course-meta">
+                        <span>Five weeks</span>
+                        <span>Twice a week</span>
+                        <span class="mode-badge">In-person studio practice</span>
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="materials">
+            <div class="rail">
+                <span class="rail-label">Materials</span>
+            </div>
+            <div class="materials-body">
+                <h2>What's included in your course fee</h2>
+                <p>Every item below is provided by the studio. You don't need to buy anything before your first class, and you keep whatever practice supplies are left at the end of the course.</p>
+
+                <div class="materials-grid">
+
+                    <div class="material-block">
+                        <h3>Henna</h3>
+                        <ul class="material-list">
+                            <li>Henna cones (natural paste, three per student)</li>
+                            <li>Practice sheets and tracing paper</li>
+                            <li>Design library access (printed and digital)</li>
+                            <li>Sealant spray and aftercare balm</li>
+                            <li>Cotton wraps and cellophane tape</li>
+                        </ul>
+                    </div>
+
+                    <div class="material-block">
+                        <h3>Stitching</h3>
+                        <ul class="material-list">
+                            <li>Practice fabric (two metres of cotton and lining)</li>
+                            <li>Thread set, hand needles and machine bobbins</li>
+                            <li>Tailor's chalk, measuring tape and pins</li>
+                            <li>Paper patterns for two beginner garments</li>
+                            <li>Machine access during studio hours</li>
+                        </ul>
+                    </div>
+
+                    <div class="material-block">
+                        <h3>Editorial Makeup</h3>
+                        <ul class="material-list">
+                            <li>Professional makeup kit (shared at the table)</li>
+                            <li>Personal brush set to keep</li>
+                            <li>Disposable applicators and hygiene supplies</li>
+                            <li>Setting sprays and translucent powder</li>
+                            <li>Portfolio photoshoot at the end of the course</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <p class="materials-note">Online students receive the same items as a shipped kit. The kit arrives within three to five working days of your first session.</p>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <div class="rail">
+                <span class="rail-label">Schedule</span>
+            </div>
+            <div class="schedule-content">
+                <h2>Upcoming batches</h2>
+                <input type="text" id="scheduleSearch" placeholder="Filter by course, day or mode">
+                <div class="table-wrap">
+                    <table id="scheduleTable">
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Duration</th>
+                                <th>Timing</th>
+                                <th>Mode</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Intricate Henna Design</td>
+                                <td>4 weeks</td>
+                                <td>Mon &amp; Wed, 2–4pm</td>
+                                <td>In-person studio practice</td>
+                            </tr>
+                            <tr>
+                                <td>Intricate Henna Design</td>
+                                <td>4 weeks</td>
+                                <td>Tue &amp; Thu, 10–1pm</td>
+                                <td>Live Zoom + kit shipped</td>
+                            </tr>
+                            <tr>
+                                <td>Contemporary Stitching</td>
+                                <td>6 weeks</td>
+                                <td>Mon &amp; Wed, 4–6pm</td>
+                                <td>In-person studio practice</td>
+                            </tr>
+                            <tr>
+                                <td>Contemporary Stitching</td>
+                                <td>6 weeks</td>
+                                <td>Sat, 10am–1pm</td>
+                                <td>Live Zoom + kit shipped</td>
+                            </tr>
+                            <tr>
+                                <td>Editorial Makeup</td>
+                                <td>5 weeks</td>
+                                <td>Tue &amp; Thu, 5–7pm</td>
+                                <td>In-person studio practice</td>
+                            </tr>
+                            <tr>
+                                <td>Editorial Makeup</td>
+                                <td>5 weeks</td>
+                                <td>Fri, 5–7pm</td>
+                                <td>Live Zoom + kit shipped</td>
+                            </tr>
+                            <tr>
+                                <td>Intricate Henna Design</td>
+                                <td>4 weeks</td>
+                                <td>Sat, 2–4pm</td>
+                                <td>In-person studio practice</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>The Craft Social</h4>
+                    <p>Youth skill center for henna, stitching and makeup.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <p>Hassan Lashkari, Garden West</p>
+                    <p>Karachi, Pakistan</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>hello@thecraftsocial.pk</p>
+                    <p>+92 332 1134278</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Monday to Saturday, 10am to 7pm</p>
+                    <p>New batches every two weeks.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 The Craft Social. Hassan Lashkari, Garden West, Karachi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

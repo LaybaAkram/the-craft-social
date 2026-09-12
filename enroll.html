@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join a class — The Craft Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">The Craft Social</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="home-services.html">Home Services</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                </ul>
+                <a href="enroll.html" class="btn-cta btn-cta-active">Join a class</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-opener">
+            <h1>Join a class</h1>
+            <p>Fill this in and we'll call or message you within 24 hours to confirm your batch and share payment details.</p>
+        </section>
+
+        <section class="enroll">
+            <div class="enroll-form-wrap">
+
+                <form id="enrollForm" class="enroll-form">
+
+                    <div class="form-pair">
+                        <div class="field">
+                            <label for="fullName">Full name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="e.g. Maryam Baloch" required>
+                        </div>
+                        <div class="field">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" placeholder="e.g. 18" min="12" max="35" required>
+                        </div>
+                    </div>
+
+                    <div class="form-pair">
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+92 3XX XXXXXXX" required>
+                        </div>
+                    </div>
+
+                    <div class="form-pair">
+                        <div class="field">
+                            <label for="courseChoice">Course</label>
+                            <select id="courseChoice" name="courseChoice" required>
+                                <option value="">Choose a course</option>
+                                <option value="henna">Intricate Henna Design</option>
+                                <option value="stitching">Contemporary Stitching</option>
+                                <option value="makeup">Editorial Makeup</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="modeChoice">Mode</label>
+                            <select id="modeChoice" name="modeChoice" required>
+                                <option value="">Choose a mode</option>
+                                <option value="offline">Offline — in-person at the studio</option>
+                                <option value="online">Online — live Zoom, kit shipped</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="experience">Previous experience</label>
+                        <select id="experience" name="experience">
+                            <option value="none">None</option>
+                            <option value="some">A little</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Anything we should know?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Preferred timings, questions, or anything else."></textarea>
+                    </div>
+
+                    <label class="checkbox-row">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>I'm happy to be contacted by The Craft Social about this enrollment.</span>
+                    </label>
+
+                    <button type="submit" class="btn-submit">Submit enrollment</button>
+                </form>
+
+                <div id="enrollSuccess" class="enroll-success" style="display: none;">
+                    <h2>Thanks! we've got it.</h2>
+                    <p>We'll be in touch within 24 hours to confirm your batch and share payment details. If you don't hear from us by then, call the studio on +92 332 1134278.</p>
+                    <a href="index.html" class="btn-quiet">Back to the homepage</a>
+                </div>
+
+            </div>
+
+            <aside class="enroll-aside">
+                <div class="aside-block">
+                    <h3>What happens next</h3>
+                    <ol class="plain-steps">
+                        <li>You submit this form.</li>
+                        <li>We check availability in the batch you've chosen.</li>
+                        <li>We call or message you within 24 hours to confirm.</li>
+                        <li>You pay the first month's fee and start your first class.</li>
+                    </ol>
+                </div>
+
+                <div class="aside-block">
+                    <h3>Need help?</h3>
+                    <p>Call or WhatsApp <strong>+92 332 1134278</strong>, or email <strong>hello@thecraftsocial.pk</strong>.</p>
+                    <p>The studio is open Monday to Saturday, 10am to 7pm.</p>
+                </div>
+
+                <div class="aside-block">
+                    <h3>Materials</h3>
+                    <p>Every course fee covers the raw materials you'll practice with. You don't need to bring anything to your first class.</p>
+                </div>
+            </aside>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>The Craft Social</h4>
+                    <p>Youth skill center for henna, stitching and makeup.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <p>Hassan Lashkari, Garden West</p>
+                    <p>Karachi, Pakistan</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>hello@thecraftsocial.pk</p>
+                    <p>+92 332 1134278</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Monday to Saturday, 10am to 7pm</p>
+                    <p>New batches every two weeks.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 The Craft Social. Hassan Lashkari, Garden West, Karachi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

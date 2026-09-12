@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees — The Craft Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">The Craft Social</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="home-services.html">Home Services</a></li>
+                    <li><a href="fees.html" class="active">Fees</a></li>
+                </ul>
+                <a href="enroll.html" class="btn-cta">Join a class</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-opener">
+            <h1>Fees</h1>
+            <p>One monthly rate per course. Practice materials are included: you don't need to buy anything before your first class.</p>
+        </section>
+
+        <section class="pricing">
+            <div class="pricing-rail">
+                <span class="rail-label">Monthly rates</span>
+            </div>
+            <div class="pricing-body">
+
+                <div class="price-row">
+                    <div class="price-name">Intricate Henna Design</div>
+                    <div class="price-figure">PKR 3,500<span> / month</span></div>
+                    <div class="price-detail">Four weeks. Cones, practice sheets and access to the design library included.</div>
+                </div>
+
+                <div class="price-row">
+                    <div class="price-name">Contemporary Stitching</div>
+                    <div class="price-figure">PKR 5,000<span> / month</span></div>
+                    <div class="price-detail">Six weeks. Fabric, thread and notions included. Machine access during studio hours.</div>
+                </div>
+
+                <div class="price-block">
+                    <div class="price-name">Editorial Makeup</div>
+                    <div class="price-figure">PKR 6,000<span> / month</span></div>
+                    <div class="price-detail">Five weeks. Professional kit, brush set and hygiene supplies included. Ends with a portfolio portrait session.</div>
+                    <p class="price-note">This is the fullest course we run; the one most students work toward after finishing henna or stitching.</p>
+                </div>
+
+                <p class="pricing-footnote">Online mode is PKR 500 less per month. The practice kit is shipped to your address at no extra charge.</p>
+
+            </div>
+        </section>
+
+        <section class="pricing pricing-services">
+            <div class="pricing-rail">
+                <span class="rail-label">Home services</span>
+            </div>
+            <div class="pricing-body">
+
+                <div class="price-row">
+                    <div class="price-name">Bridal &amp; event henna</div>
+                    <div class="price-figure">PKR 8,000<span> and up</span></div>
+                    <div class="price-detail">Booked per event. Travel included within Garden West, Gulshan, North Nazimabad and Federal B Area.</div>
+                </div>
+
+                <div class="price-row">
+                    <div class="price-name">Stitching pickup &amp; alterations</div>
+                    <div class="price-figure">PKR 1,500<span> and up</span></div>
+                    <div class="price-detail">Priced per job after we see the garment. Pickup and drop within the same areas.</div>
+                </div>
+
+                <div class="price-row">
+                    <div class="price-name">Event &amp; party makeup</div>
+                    <div class="price-figure">PKR 6,500<span> per person</span></div>
+                    <div class="price-detail">Roughly 90 minutes per look. Group bookings for family events available on request.</div>
+                </div>
+
+                <p class="pricing-footnote">To book a home visit, use the form on the home services page. Confirmation and final pricing are settled by phone before the visit.</p>
+
+            </div>
+        </section>
+
+        <section class="calculator">
+            <div class="rail">
+                <span class="rail-label">Calculate</span>
+            </div>
+            <div class="calculator-body">
+                <h2>Work out your monthly fee</h2>
+                <p class="calculator-intro">Pick a course and a mode. The figure updates as you go.</p>
+
+                <div class="calc-field">
+                    <label for="skillSelect">Course</label>
+                    <select id="skillSelect">
+                        <option value="">Choose a course</option>
+                        <option value="henna">Intricate Henna Design</option>
+                        <option value="stitching">Contemporary Stitching</option>
+                        <option value="makeup">Editorial Makeup</option>
+                    </select>
+                </div>
+
+                <div class="calc-field">
+                    <span class="calc-label">Mode</span>
+                    <div class="radio-stack">
+                        <label class="radio-row">
+                            <input type="radio" name="courseMode" value="online">
+                            <span>Online — live Zoom, kit shipped</span>
+                        </label>
+                        <label class="radio-row">
+                            <input type="radio" name="courseMode" value="offline">
+                            <span>Offline — in-person at the studio</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="calc-total">
+                    <span class="calc-total-label">Monthly total</span>
+                    <span id="calculatedPrice">PKR 0</span>
+                    <p class="calc-total-note">All practice materials included.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>The Craft Social</h4>
+                    <p>Youth skill center for henna, stitching and makeup.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <p>Hassan Lashkari, Garden West</p>
+                    <p>Karachi, Pakistan</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>hello@thecraftsocial.pk</p>
+                    <p>+92 332 1134278</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Monday to Saturday, 10am to 7pm</p>
+                    <p>New batches every two weeks.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 The Craft Social. Hassan Lashkari, Garden West, Karachi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

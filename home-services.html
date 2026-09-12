@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Services — The Craft Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">The Craft Social</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="home-services.html" class="active">Home Services</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                </ul>
+                <a href="enroll.html" class="btn-cta">Join a class</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-opener">
+            <h1>Home services</h1>
+            <p>Some of what we teach, we also do at your home. Bridal henna, stitching pickups and event makeup, all within Karachi.</p>
+        </section>
+
+        <section class="service-list">
+
+            <article class="service">
+                <div class="service-image">
+                    <img src="images/henna-hand.jpg" alt="A completed bridal henna design on an arm">
+                </div>
+                <div class="service-body">
+                    <h2>Bridal &amp; event henna</h2>
+                    <p>A senior henna artist comes to your home for a bridal or family event. We arrive with our own cones, sealant, aftercare kit and design book. Timings and design scope are confirmed by phone before the visit.</p>
+                    <ul class="service-details">
+                        <li>From PKR 8,000 for a bridal booking</li>
+                        <li>Two to four hours on site, depending on coverage</li>
+                        <li>Available across Karachi, travel included within Garden West and Gulshan</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="service">
+                <div class="service-image">
+                    <img src="images/sewing-tools.jpg" alt="Sewing scissors, tape measure and thread">
+                </div>
+                <div class="service-body">
+                    <h2>Stitching pickups &amp; alterations</h2>
+                    <p>Small tailoring jobs picked up from your home and returned finished within a week. Hems, minor repairs, taking in or letting out, and simple alterations to existing garments.</p>
+                    <ul class="service-details">
+                        <li>From PKR 1,500 per garment</li>
+                        <li>Pickup and drop within Garden West and Gulshan</li>
+                        <li>Priced per job after we see the garment</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="service">
+                <div class="service-image">
+                    <img src="images/makeup-brush.jpg" alt="A makeup artist applying colour to a client's eye">
+                </div>
+                <div class="service-body">
+                    <h2>Event &amp; party makeup</h2>
+                    <p>A makeup artist comes to your home for a party, engagement, shoot or mehndi. We bring the full kit — brushes, hygiene supplies, lashes and setting sprays. Hairstyling is available on request.</p>
+                    <ul class="service-details">
+                        <li>From PKR 6,500 per person</li>
+                        <li>Roughly 90 minutes per look</li>
+                        <li>Group bookings available for family events</li>
+                    </ul>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="service-booking">
+            <div class="rail">
+                <span class="rail-label">Book a visit</span>
+            </div>
+            <div class="booking-body">
+
+                <h2>Request a home visit</h2>
+                <p class="booking-intro">Tell us what you need and where you are. We'll confirm the artist, the timing and the final price by phone within 24 hours.</p>
+
+                <form id="serviceForm" class="service-form">
+
+                    <div class="form-pair">
+                        <div class="field">
+                            <label for="serviceName">Full name</label>
+                            <input type="text" id="serviceName" name="serviceName" placeholder="e.g. Maryam Baloch" required>
+                        </div>
+                        <div class="field">
+                            <label for="servicePhone">Phone</label>
+                            <input type="tel" id="servicePhone" name="servicePhone" placeholder="+92 3XX XXXXXXX" required>
+                        </div>
+                    </div>
+
+                    <div class="form-pair">
+                        <div class="field">
+                            <label for="serviceType">Service</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Choose a service</option>
+                                <option value="henna">Bridal &amp; event henna</option>
+                                <option value="stitching">Stitching pickup &amp; alterations</option>
+                                <option value="makeup">Event &amp; party makeup</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="serviceDate">Preferred date</label>
+                            <input type="date" id="serviceDate" name="serviceDate" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="serviceArea">Area in Karachi</label>
+                        <input type="text" id="serviceArea" name="serviceArea" placeholder="e.g. Garden West, Gulshan, DHA" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="serviceAddress">Full address</label>
+                        <input type="text" id="serviceAddress" name="serviceAddress" placeholder="House, street, block" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="serviceNotes">Anything we should know?</label>
+                        <textarea id="serviceNotes" name="serviceNotes" rows="4" placeholder="Number of people, coverage needed, or anything else."></textarea>
+                    </div>
+
+                    <label class="checkbox-row">
+                        <input type="checkbox" id="serviceTerms" name="serviceTerms" required>
+                        <span>I'm happy to be contacted by The Craft Social about this booking.</span>
+                    </label>
+
+                    <button type="submit" class="btn-submit">Request home visit</button>
+                </form>
+
+                <div id="serviceSuccess" class="enroll-success" style="display: none;">
+                    <h2>Thanks, we've got it.</h2>
+                    <p>We'll call or message you within 24 hours to confirm the artist, timing and final price. If you don't hear from us by then, call the studio on +92 332 1134278.</p>
+                    <a href="index.html" class="btn-quiet">Back to the homepage</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="service-notes">
+            <div class="rail">
+                <span class="rail-label">Good to know</span>
+            </div>
+            <div class="notes-body">
+                <div class="note">
+                    <h3>Travel</h3>
+                    <p>Travel is included within Garden West, Gulshan, North Nazimabad and Federal B Area. A small travel charge applies for DHA, Clifton, and areas beyond these.</p>
+                </div>
+                <div class="note">
+                    <h3>Payment</h3>
+                    <p>Half is paid in advance to hold the booking, and the rest is settled on the day of the visit. We accept bank transfer, Easypaisa and cash.</p>
+                </div>
+                <div class="note">
+                    <h3>Cancellations</h3>
+                    <p>Let us know at least 48 hours before the visit and the advance is returned in full. Less than 48 hours and the advance is kept.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>The Craft Social</h4>
+                    <p>Youth skill center for henna, stitching and makeup.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <p>Hassan Lashkari, Garden West</p>
+                    <p>Karachi, Pakistan</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>hello@thecraftsocial.pk</p>
+                    <p>+92 332 1134278</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Monday to Saturday, 10am to 7pm</p>
+                    <p>New batches every two weeks.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 The Craft Social. Hassan Lashkari, Garden West, Karachi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
